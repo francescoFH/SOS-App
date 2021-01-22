@@ -1,5 +1,24 @@
 # SOS-Test
 
+## Installation Instructions
+
+Clone project
+
+From project directory run 'pod init'
+
+Open Podfile in text editor and add:
+
+``
+pod ‘GoogleMaps’, ‘4.1.0’
+pod ‘GooglePlaces’, ‘4.1.0’
+``
+
+From command line enter 'pod install'
+
+After dependencies have installed:
+
+open 'SOS-App.xcworkspace'
+
 ## Tech-Stack - Swift
 
 ### SOS App
