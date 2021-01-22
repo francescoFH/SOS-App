@@ -34,3 +34,7 @@ I want to hit a big red button that says HELP
 
 
 ### Additional Functions:
+
+![Launch](https://user-images.githubusercontent.com/71830424/105181474-c01c5f80-5b23-11eb-89b8-09ae50f3bef6.png).
+
+![Location](https://user-images.githubusercontent.com/71830424/105181740-16899e00-5b24-11eb-938e-09bac2e1946b.png).
