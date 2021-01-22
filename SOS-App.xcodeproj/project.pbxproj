@@ -14,6 +14,7 @@
 		131BD93D25BA404400B6FF44 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD93C25BA404400B6FF44 /* Metadata.swift */; };
 		131BD94225BA409400B6FF44 /* CLLocationCoordinate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD94125BA409400B6FF44 /* CLLocationCoordinate+Extensions.swift */; };
 		131BD94725BA40ED00B6FF44 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD94625BA40ED00B6FF44 /* MarkerInfoView.swift */; };
+		13762B9925BAE1AF00981B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13762B9825BAE1AF00981B83 /* ViewController.swift */; };
 		1380FB2325B9C6F4001D74E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380FB2225B9C6F4001D74E7 /* AppDelegate.swift */; };
 		1380FB2525B9C6F4001D74E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380FB2425B9C6F4001D74E7 /* SceneDelegate.swift */; };
 		1380FB2725B9C6F4001D74E7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1380FB2625B9C6F4001D74E7 /* MapViewController.swift */; };
@@ -54,6 +55,7 @@
 		131BD93C25BA404400B6FF44 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		131BD94125BA409400B6FF44 /* CLLocationCoordinate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate+Extensions.swift"; sourceTree = "<group>"; };
 		131BD94625BA40ED00B6FF44 /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		13762B9825BAE1AF00981B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1380FB1F25B9C6F4001D74E7 /* SOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1380FB2225B9C6F4001D74E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1380FB2425B9C6F4001D74E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		1380FB2125B9C6F4001D74E7 /* SOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				13762B9825BAE1AF00981B83 /* ViewController.swift */,
 				1380FB2225B9C6F4001D74E7 /* AppDelegate.swift */,
 				131BD91025BA3DF100B6FF44 /* Controllers */,
 				131BD92E25BA3FE000B6FF44 /* Model */,
@@ -464,6 +467,7 @@
 				131BD93825BA402200B6FF44 /* PlaceMarker.swift in Sources */,
 				131BD93D25BA404400B6FF44 /* Metadata.swift in Sources */,
 				1380FB2725B9C6F4001D74E7 /* MapViewController.swift in Sources */,
+				13762B9925BAE1AF00981B83 /* ViewController.swift in Sources */,
 				131BD93325BA400200B6FF44 /* GooglePlace.swift in Sources */,
 				131BD91D25BA3F0400B6FF44 /* TypesTableViewController.swift in Sources */,
 				1380FB2325B9C6F4001D74E7 /* AppDelegate.swift in Sources */,
