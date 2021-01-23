@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIn-IF-lpY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hJ3-km-MIj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -12,15 +12,15 @@
             <objects>
                 <viewController id="6Vl-cR-kPt" customClass="MapViewController" customModule="SOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q99-rZ-hi0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-MR-hyl" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Cv-vlg">
-                                <rect key="frame" x="0.0" y="768" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="773" width="414" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gb7-XU-zZH"/>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me" translatesAutoresizingMaskIntoConstraints="NO" id="0Dd-MB-RI4">
-                                <rect key="frame" x="192" y="377" width="30" height="55"/>
+                                <rect key="frame" x="192" y="395.5" width="30" height="55"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MQX-td-UDs"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfg-1B-EKh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="797"/>
+            <point key="canvasLocation" x="1876.8115942028987" y="796.875"/>
         </scene>
         <!--Choose Types-->
         <scene sceneID="Iyw-nq-7cw">
@@ -113,9 +113,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utg-Ek-WQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="797"/>
+            <point key="canvasLocation" x="3404.347826086957" y="796.875"/>
         </scene>
-        <!--First View Controller-->
+        <!--Home-->
         <scene sceneID="3px-06-0nk">
             <objects>
                 <viewController id="SIn-IF-lpY" customClass="FirstViewController" customModule="SOS_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,40 +126,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="handshake copy" translatesAutoresizingMaskIntoConstraints="NO" id="fgh-cz-cS2">
                                 <rect key="frame" x="30" y="291" width="355" height="314"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbP-YE-mm1">
-                                <rect key="frame" x="145" y="658" width="124" height="118"/>
-                                <state key="normal" title="Button" image="Mapp"/>
-                                <connections>
-                                    <segue destination="XxV-fm-qn8" kind="show" id="ux8-II-kCo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xb8-Vl-rpg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fgh-cz-cS2" firstAttribute="leading" secondItem="xb8-Vl-rpg" secondAttribute="leading" constant="30" id="6ia-Wn-HZB"/>
-                            <constraint firstItem="AbP-YE-mm1" firstAttribute="leading" secondItem="xb8-Vl-rpg" secondAttribute="leading" constant="145" id="DA0-xI-4aY"/>
                             <constraint firstItem="fgh-cz-cS2" firstAttribute="centerY" secondItem="zt5-nJ-3d2" secondAttribute="centerY" id="DZF-ap-5uv"/>
-                            <constraint firstItem="xb8-Vl-rpg" firstAttribute="bottom" secondItem="AbP-YE-mm1" secondAttribute="bottom" constant="86" id="G8K-Du-IYk"/>
-                            <constraint firstItem="fgh-cz-cS2" firstAttribute="centerX" secondItem="AbP-YE-mm1" secondAttribute="centerX" id="X4c-bv-3HL"/>
                             <constraint firstItem="fgh-cz-cS2" firstAttribute="centerX" secondItem="zt5-nJ-3d2" secondAttribute="centerX" id="mJT-Jf-bFu"/>
                             <constraint firstItem="fgh-cz-cS2" firstAttribute="top" secondItem="xb8-Vl-rpg" secondAttribute="top" constant="247" id="rR6-WO-Ttp"/>
-                            <constraint firstItem="AbP-YE-mm1" firstAttribute="top" secondItem="fgh-cz-cS2" secondAttribute="bottom" constant="53" id="uRV-9O-iDr"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="L64-1z-hmK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjZ-Ac-dhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484.05797101449281" y="796.875"/>
+            <point key="canvasLocation" x="426.08695652173918" y="796.875"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
         <scene sceneID="R7x-aH-Eej">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XxV-fm-qn8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="gjv-Dc-ZjQ"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="63U-PK-fpr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="klB-tY-maH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -169,7 +160,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afm-Fy-i2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="797"/>
+            <point key="canvasLocation" x="1198.5507246376812" y="796.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IgC-r0-ZVi">
@@ -187,11 +178,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APL-29-bGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="797"/>
+            <point key="canvasLocation" x="2592.753623188406" y="796.875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0QT-Ij-nbx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hJ3-km-MIj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Bv-OH-VYN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SIn-IF-lpY" kind="relationship" relationship="viewControllers" id="L8g-ry-tc4"/>
+                        <segue destination="XxV-fm-qn8" kind="relationship" relationship="viewControllers" id="NEh-tW-zKX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bu-T0-Tz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484.05797101449281" y="796.875"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Mapp" width="900" height="900"/>
         <image name="filter" width="25" height="25"/>
         <image name="handshake copy" width="1000" height="1000"/>
         <image name="icon_me" width="30" height="55"/>
