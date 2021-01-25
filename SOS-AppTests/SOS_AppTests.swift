@@ -29,5 +29,18 @@ class SOS_AppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testFetchEmergencyAPI() {
+       let exp = expectation(description:"fetching API data from server")
+       let session: URLSession = URLSession(configuration: .default)
+       let url = URL(string: "https://emergency-phone-numbers.herokuapp.com/country/us")
+       session.dataTask(with: url!) { data, response, error in
+          XCTAssertNil(error)
+          exp.fulfill()
+       }.resume()
+       waitForExpectations(timeout: 10.0) { (error) in
+          print(error?.localizedDescription ?? "error")
+       }
+    }
 
 }

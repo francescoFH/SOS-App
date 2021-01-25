@@ -21,10 +21,13 @@ struct Result : Decodable {
 
 struct HomeAPIContentView: View {
     @State private var content = [Result]()
+    @ObservedObject var locationViewModel = LocationViewModel()
 
     var body: some View {
         List(content, id: \.code) { item in
             VStack(alignment: .center) {
+                Text("Latitude: \(locationViewModel.userLatitude)")
+                Text("Longitude: \(locationViewModel.userLongitude)")
                 Text(item.name)
                     .font(.headline)
                 HStack {
