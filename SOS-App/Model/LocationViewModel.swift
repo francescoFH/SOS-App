@@ -13,8 +13,9 @@ class LocationViewModel: NSObject, ObservableObject{
   
   @Published var userLatitude: Double = 0
   @Published var userLongitude: Double = 0
-  
+
   private let locationManager = CLLocationManager()
+  private let geoCoder = CLGeocoder()
   
   override init() {
     super.init()
@@ -32,5 +33,11 @@ extension LocationViewModel: CLLocationManagerDelegate {
     userLatitude = location.coordinate.latitude
     userLongitude = location.coordinate.longitude
     print(location)
+
+    geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
+        guard let currentLocPlacemark = placemarks?.first else { return }
+            print(currentLocPlacemark.country ?? "No country found")
+            print(currentLocPlacemark.isoCountryCode ?? "No country code found")
+        }
   }
 }
