@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  InfoViewController.swift
 //  SOS-App
 //
 //  Created by Joshua Retallick on 23/01/2021.
