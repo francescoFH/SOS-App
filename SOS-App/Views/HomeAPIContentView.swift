@@ -26,6 +26,8 @@ struct HomeAPIContentView: View {
     var body: some View {
         List(content, id: \.code) { item in
             VStack(alignment: .center) {
+                Text("Latitude: \(locationViewModel.userLatitude)")
+                Text("Longitude: \(locationViewModel.userLongitude)")
                 Text(item.name)
                     .font(.headline)
                 HStack {

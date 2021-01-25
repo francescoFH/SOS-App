@@ -34,6 +34,7 @@ extension LocationViewModel: CLLocationManagerDelegate {
     userLongitude = location.coordinate.longitude
     print(location)
     
+    
     geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
         guard let currentLocPlacemark = placemarks?.first else { return }
             print(currentLocPlacemark.country ?? "No country found")
