@@ -24,9 +24,9 @@ struct HomeAPIContentView: View {
     
     // lines 27 to 29 are for ghostbusters
     
-//    @State var audioPlayer: AVAudioPlayer?
-//
-//    var sound = "ghostbusters.mp3"
+    @State var audioPlayer: AVAudioPlayer?
+
+    var sound = "ghostbusters.mp3"
     
     // end of ghostbusters declaratations
     
@@ -35,8 +35,9 @@ struct HomeAPIContentView: View {
     var body: some View {
         List(locationViewModel.content, id: \.code) { item in
             VStack(alignment: .center) {
-                Text("Latitude: \(locationViewModel.userLatitude)")
-                Text("Longitude: \(locationViewModel.userLongitude)")
+//                Text("Latitude: \(locationViewModel.userLatitude)")
+//                Text("Longitude: \(locationViewModel.userLongitude)")
+                Text("Street: \(locationViewModel.number) \(locationViewModel.street), \(locationViewModel.locality)")
                 Text(item.name)
                     .font(.headline)
                 HStack {
@@ -62,15 +63,15 @@ struct HomeAPIContentView: View {
                     
                     // ghostbusters button code
                 
-//                    Button(action: {
-//                        playSound(sound: "ghostbusters", type: "mp3")
-//                    }) {
-//                            Image("ghostbusters-icon")
-//                                .resizable()
-//                                .frame(width: 50.0, height: 50.0)
-//                        }
+                    Button(action: {
+                        playSound(sound: "ghostbusters", type: "mp3")
+                    }) {
+                            Image("ghostbusters-icon")
+                                .resizable()
+                                .frame(width: 50.0, height: 50.0)
+                        }
                     
-                    // end of ghostbusters button code
+//                     end of ghostbusters button code
                     
 //                    Link("CALL", destination: URL(string: "tel:441924457784")!)
                     
@@ -81,16 +82,16 @@ struct HomeAPIContentView: View {
     }
     // start playsound function
 
-//    func playSound(sound: String, type: String) {
-//        if let path = Bundle.main.path(forResource: sound, ofType: type) {
-//            do {
-//                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
-//                audioPlayer?.play()
-//            } catch {
-//                print("ERROR")
-//            }
-//        }
-//    }
+    func playSound(sound: String, type: String) {
+        if let path = Bundle.main.path(forResource: sound, ofType: type) {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                audioPlayer?.play()
+            } catch {
+                print("ERROR")
+            }
+        }
+    }
 
     // finish playsound functionn
 }
