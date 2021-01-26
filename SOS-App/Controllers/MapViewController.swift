@@ -13,7 +13,7 @@ class MapViewController: UIViewController {
   @IBOutlet private weak var mapView: GMSMapView!
   @IBOutlet private weak var mapCenterPinImage: UIImageView!
   @IBOutlet private weak var pinImageVerticalConstraint: NSLayoutConstraint!
-  private var searchedTypes = ["hospital", "pharmacy"]
+  private var searchedTypes = ["hospital", "pharmacy", "police"]
   private let locationManager = CLLocationManager()
   private let dataProvider = GoogleDataProvider()
   private let searchRadius: Double = 1000

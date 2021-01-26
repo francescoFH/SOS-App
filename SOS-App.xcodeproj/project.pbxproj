@@ -11,7 +11,6 @@
 		1077E87825BDF6A2004DF6F9 /* HomeAPIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077E87725BDF6A2004DF6F9 /* HomeAPIContentView.swift */; };
 		1077E88525BE0428004DF6F9 /* UIMimicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077E88425BE0428004DF6F9 /* UIMimicController.swift */; };
 		1077E89C25BF0FDC004DF6F9 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077E89B25BF0FDC004DF6F9 /* LocationViewModel.swift */; };
-		10FA6D1225BC2DB30087F484 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FA6D1125BC2DB30087F484 /* InfoViewController.swift */; };
 		131BD91D25BA3F0400B6FF44 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD91C25BA3F0400B6FF44 /* TypesTableViewController.swift */; };
 		131BD92A25BA3FAB00B6FF44 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD92925BA3FAB00B6FF44 /* GoogleDataProvider.swift */; };
 		131BD93325BA400200B6FF44 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD93225BA400200B6FF44 /* GooglePlace.swift */; };
@@ -56,7 +55,6 @@
 		1077E87725BDF6A2004DF6F9 /* HomeAPIContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAPIContentView.swift; sourceTree = "<group>"; };
 		1077E88425BE0428004DF6F9 /* UIMimicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMimicController.swift; sourceTree = "<group>"; };
 		1077E89B25BF0FDC004DF6F9 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
-		10FA6D1125BC2DB30087F484 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		131BD91C25BA3F0400B6FF44 /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		131BD92925BA3FAB00B6FF44 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		131BD93225BA400200B6FF44 /* GooglePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				1077E88425BE0428004DF6F9 /* UIMimicController.swift */,
 				1380FB2625B9C6F4001D74E7 /* MapViewController.swift */,
 				131BD91C25BA3F0400B6FF44 /* TypesTableViewController.swift */,
-				10FA6D1125BC2DB30087F484 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -477,7 +474,6 @@
 				131BD94725BA40ED00B6FF44 /* MarkerInfoView.swift in Sources */,
 				131BD94225BA409400B6FF44 /* CLLocationCoordinate+Extensions.swift in Sources */,
 				131BD92A25BA3FAB00B6FF44 /* GoogleDataProvider.swift in Sources */,
-				10FA6D1225BC2DB30087F484 /* InfoViewController.swift in Sources */,
 				1077E88525BE0428004DF6F9 /* UIMimicController.swift in Sources */,
 				131BD93825BA402200B6FF44 /* PlaceMarker.swift in Sources */,
 				131BD93D25BA404400B6FF44 /* Metadata.swift in Sources */,
