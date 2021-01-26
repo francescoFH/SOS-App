@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct Response: Decodable {
-    var content: [Result]
+    var content: [MyResult]
 }
-
-struct Result : Decodable {
+//Result already exists in Swift you will cause issues if you use names that are already used
+struct MyResult : Decodable {
     var code: String
     var fire: String
     var name: String
@@ -20,11 +20,11 @@ struct Result : Decodable {
 }
 
 struct HomeAPIContentView: View {
-    @State private var content = [Result]()
-    @ObservedObject var locationViewModel = LocationViewModel()
-
+    
+    @StateObject var locationViewModel = LocationViewModel()
+    
     var body: some View {
-        List(content, id: \.code) { item in
+        List(locationViewModel.content, id: \.code) { item in
             VStack(alignment: .center) {
                 Text("Latitude: \(locationViewModel.userLatitude)")
                 Text("Longitude: \(locationViewModel.userLongitude)")
@@ -43,26 +43,7 @@ struct HomeAPIContentView: View {
                 }
             }
         }
-        .onAppear(perform: loadData)
-    }
-    func loadData() {
-        
-        let url = URL(string: "https://emergency-phone-numbers.herokuapp.com/country/us")!
-
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error { print(error); return }
-            do {
-                let decodedResponse = try JSONDecoder().decode(Result.self, from: data!)
-                // we have good data – go back to the main thread
-                DispatchQueue.main.async {
-                    // update our UI
-                    self.content = [decodedResponse]
-                }
-                
-            } catch {
-                print(error)
-            }
-        }.resume()
         
     }
+    
 }
