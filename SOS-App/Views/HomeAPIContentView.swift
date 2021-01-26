@@ -43,7 +43,5 @@ struct HomeAPIContentView: View {
                 }
             }
         }
-        
     }
-    
 }
