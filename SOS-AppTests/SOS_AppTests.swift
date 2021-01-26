@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import SOS_App
 
 class SOS_AppTests: XCTestCase {
@@ -42,5 +43,15 @@ class SOS_AppTests: XCTestCase {
           print(error?.localizedDescription ?? "error")
        }
     }
-
+      
+  func test_view_model_updates_latitude_and_longitude_properties() {
+    let locations: [CLLocation] = [CLLocation(latitude: 12, longitude: 10)]
+    
+    let viewModel = LocationViewModel()
+    
+    viewModel.locationManager(CLLocationManager(), didUpdateLocations: locations)
+    
+    XCTAssertEqual(12, viewModel.userLatitude)
+    XCTAssertEqual(10, viewModel.userLongitude)
+    }
 }

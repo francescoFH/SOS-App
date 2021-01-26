@@ -77,8 +77,8 @@ struct HomeAPIContentView: View {
                 }
             }
         }
-        
     }
+
     // start playsound function
 
 //    func playSound(sound: String, type: String) {
@@ -93,5 +93,6 @@ struct HomeAPIContentView: View {
 //    }
 
     // finish playsound functionn
+
 }
 
