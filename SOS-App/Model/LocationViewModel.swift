@@ -10,6 +10,7 @@ import Combine
 import CoreLocation
 
 class LocationViewModel: NSObject, ObservableObject{
+
     //MARK: Properties
     @Published var content = [MyResult]()
     @Published var userLatitude: Double = 0
@@ -84,5 +85,6 @@ extension LocationViewModel: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
     }
+
 }
 
