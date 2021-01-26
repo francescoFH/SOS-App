@@ -65,7 +65,7 @@ extension LocationViewModel: CLLocationManagerDelegate {
         CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
             if error != nil
             {
-                print("there is an error \(error)")
+                print("there is an error \(String(describing: error))")
             }
             else
             {
