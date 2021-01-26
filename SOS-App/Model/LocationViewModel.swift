@@ -15,6 +15,9 @@ class LocationViewModel: NSObject, ObservableObject{
     @Published var content = [MyResult]()
     @Published var userLatitude: Double = 0
     @Published var userLongitude: Double = 0
+    @Published var number = ""
+    @Published var street = ""
+    @Published var locality = ""
     @Published var isoCountryCode = ""{
         didSet{
             //load the data once you have a countrycode
@@ -72,6 +75,9 @@ extension LocationViewModel: CLLocationManagerDelegate {
                 if let place = placemark?[0]
                 {
                     self.isoCountryCode = place.isoCountryCode ?? ""
+                    self.number = place.subThoroughfare ?? ""
+                    self.street = place.thoroughfare ?? ""
+                    self.locality = place.locality ?? ""
                 }
             }
         }
