@@ -12,7 +12,7 @@ protocol TypesTableViewControllerDelegate: class {
 }
 
 class TypesTableViewController: UITableViewController {
-  private let possibleTypesDictionary = ["hospital": "Hospital", "pharmacy": "Pharmacy"]
+    private let possibleTypesDictionary = ["hospital": "Hospital", "pharmacy": "Pharmacy", "police": "Police"]
   
   private var sortedKeys: [String] {
     return possibleTypesDictionary.keys.sorted()
