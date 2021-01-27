@@ -6,7 +6,7 @@ SOS-App is an emergency app which identifies the user-location and generates the
 - further details to be added
 
 ## Installation Instructions
-
+```
 Clone project
 
 From project directory run 'pod init'
@@ -24,13 +24,16 @@ From command line enter 'pod install'
 After dependencies have installed:
 
 open 'SOS-App.xcworkspace'
+```
 
 ## Tech-Stack 
+```
 Written using Xcode 12 and Swift 5
 SwiftUIKit / SwiftUI hybrid Front & Back
 Apple Maps
 GoogleMaps 4.1.0
 GooglePlaces 4.1.0
+```
 ![External API](https://github.com/BalestraPatrick/EmergencyAPI)
 
 ### User Stories:
