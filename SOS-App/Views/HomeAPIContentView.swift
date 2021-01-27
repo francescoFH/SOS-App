@@ -27,6 +27,10 @@ struct HomeAPIContentView: View {
     var body: some View {
         List(locationViewModel.content, id: \.code) { item in
             VStack(alignment: .center) {
+                Text("SOS App")
+                    .font(.title)
+                    .foregroundColor(Color.red)
+                Spacer()
 //                Text("Latitude: \(locationViewModel.userLatitude)")
 //                Text("Longitude: \(locationViewModel.userLongitude)")
                 Text("Street: \(locationViewModel.number) \(locationViewModel.street), \(locationViewModel.locality)")
@@ -52,7 +56,6 @@ struct HomeAPIContentView: View {
 //                    Text(item.fire)
                     Link(item.fire, destination: URL(string: item.fire)!)
                         .foregroundColor(Color.red)
-                    
                 }
             }
             .padding()

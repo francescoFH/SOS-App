@@ -29,7 +29,6 @@
 		13CA2D3325BA43C900B979D6 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CA2D3225BA43C900B979D6 /* MarkerInfoView.xib */; };
 		13CA2D3825BA441200B979D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA2D3725BA441200B979D6 /* UIView+Extensions.swift */; };
 		2F2AF9EBF201F9FE2B79EAED /* Pods_SOS_App_SOS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4458B1D9C7D23635818C8809 /* Pods_SOS_App_SOS_AppUITests.framework */; };
-		79FBC26225C05CF60074A379 /* ghostbusters.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79FBC26125C05CF60074A379 /* ghostbusters.mp3 */; };
 		D82070A0A62153C24DC37C83 /* Pods_SOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03FDCDCADCB77C72A47DF43 /* Pods_SOS_App.framework */; };
 		DC899899532095E459ED0E30 /* Pods_SOS_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0EB2351AB1DA7D95E85332 /* Pods_SOS_AppTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,7 +81,6 @@
 		4458B1D9C7D23635818C8809 /* Pods_SOS_App_SOS_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_App_SOS_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A5EC5B2DE9A8445167A66 /* Pods-SOS-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS-AppTests.release.xcconfig"; path = "Target Support Files/Pods-SOS-AppTests/Pods-SOS-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B474BA887CC6085BF17568C /* Pods-SOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS-App.debug.xcconfig"; path = "Target Support Files/Pods-SOS-App/Pods-SOS-App.debug.xcconfig"; sourceTree = "<group>"; };
-		79FBC26125C05CF60074A379 /* ghostbusters.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghostbusters.mp3; sourceTree = "<group>"; };
 		A03FDCDCADCB77C72A47DF43 /* Pods_SOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B253F32DB492D8FAE250293F /* Pods-SOS-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-SOS-AppTests/Pods-SOS-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB0EB2351AB1DA7D95E85332 /* Pods_SOS_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,7 +177,6 @@
 		1380FB2125B9C6F4001D74E7 /* SOS-App */ = {
 			isa = PBXGroup;
 			children = (
-				79FBC26125C05CF60074A379 /* ghostbusters.mp3 */,
 				1380FB2225B9C6F4001D74E7 /* AppDelegate.swift */,
 				131BD91025BA3DF100B6FF44 /* Controllers */,
 				131BD92E25BA3FE000B6FF44 /* Model */,
@@ -345,7 +342,6 @@
 			files = (
 				13CA2D3325BA43C900B979D6 /* MarkerInfoView.xib in Resources */,
 				1380FB2F25B9C6F6001D74E7 /* LaunchScreen.storyboard in Resources */,
-				79FBC26225C05CF60074A379 /* ghostbusters.mp3 in Resources */,
 				1380FB2C25B9C6F6001D74E7 /* images.xcassets in Resources */,
 				1380FB2A25B9C6F4001D74E7 /* Main.storyboard in Resources */,
 			);
