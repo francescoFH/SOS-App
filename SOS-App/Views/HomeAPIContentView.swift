@@ -33,13 +33,13 @@ struct HomeAPIContentView: View {
                 Text(item.name)
                     .font(.headline)
                 HStack {
-                    Image("call-ambulance-icon")
+                    Image("call-ambulance-service")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)
 //                    Text("Medical:")
                     Link(item.medical, destination: URL(string: item.medical)!)
                         .foregroundColor(Color.red)
-                    Image("call-police-icon")
+                    Image("call-police-service")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)
 //                    Text("Police:")
@@ -55,6 +55,7 @@ struct HomeAPIContentView: View {
                     
                 }
             }
+            .padding()
         }
         Image("handshake copy")
             .resizable()
