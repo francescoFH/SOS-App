@@ -5,6 +5,8 @@ SOS-App is an emergency app which identifies the user-location and generates the
 
 - further details to be added
 
+![App](https://user-images.githubusercontent.com/71830424/106003094-c4a7c180-60a9-11eb-9bdf-e7c3e0e60bce.gif)
+
 ## Installation Instructions
 ```
 Clone project
