@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import CoreLocation
+@testable import SOS_App
 
 class SOS_AppUITests: XCTestCase {
 

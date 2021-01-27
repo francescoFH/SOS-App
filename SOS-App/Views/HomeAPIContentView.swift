@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import AVFoundation  // for ghostbusters
 
 struct Response: Decodable {
     var content: [MyResult]
@@ -57,8 +56,9 @@ struct HomeAPIContentView: View {
                 }
             }
         }
-        
     }
-  
+
+
+
 }
 
