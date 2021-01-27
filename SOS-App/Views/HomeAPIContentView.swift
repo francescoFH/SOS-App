@@ -10,7 +10,7 @@ import SwiftUI
 struct Response: Decodable {
     var content: [MyResult]
 }
-//Result already exists in Swift you will cause issues if you use names that are already used
+
 struct MyResult : Decodable {
     var code: String
     var fire: String
@@ -29,33 +29,36 @@ struct HomeAPIContentView: View {
             VStack(alignment: .center) {
                 Text("SOS App")
                     .font(.title)
+                    .fontWeight(.bold)
                     .foregroundColor(Color.red)
+                    .multilineTextAlignment(.center)
                 Spacer()
-//                Text("Latitude: \(locationViewModel.userLatitude)")
-//                Text("Longitude: \(locationViewModel.userLongitude)")
+                    .frame(height: 50)
                 Text("Street: \(locationViewModel.number) \(locationViewModel.street), \(locationViewModel.locality)")
+                    .multilineTextAlignment(.center)
                 Text(item.name)
                     .font(.headline)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 50)
                 HStack {
                     Image("call-ambulance-service")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)
-//                    Text("Medical:")
                     Link(item.medical, destination: URL(string: item.medical)!)
                         .foregroundColor(Color.red)
                     Image("call-police-service")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)
-//                    Text("Police:")
                     Link(item.police, destination: URL(string: item.police)!)
                         .foregroundColor(Color.red)
                     Image("call-fire-service")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)
-//                    Text("Fire:")
-//                    Text(item.fire)
                     Link(item.fire, destination: URL(string: item.fire)!)
                         .foregroundColor(Color.red)
+                    Spacer()
+                        .frame(height: 50)
                 }
             }
             .padding()
@@ -64,8 +67,5 @@ struct HomeAPIContentView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
-
-
-
 }
 
