@@ -1,4 +1,9 @@
-# SOS-Test
+# SOS-App
+
+## About 
+SOS-App is an emergency app which identifies the user-location and generates the corresponding emergency numbers for that area (Ambulance, Fire, Police). It will also generate a map giving directions to the closest hospitals, police stations and pharmacies. 
+
+- further details to be added
 
 ## Installation Instructions
 
@@ -10,6 +15,7 @@ Open Podfile in text editor and add:
 
 ``
 pod ‘GoogleMaps’, ‘4.1.0’
+
 pod ‘GooglePlaces’, ‘4.1.0’
 ``
 
@@ -19,41 +25,51 @@ After dependencies have installed:
 
 open 'SOS-App.xcworkspace'
 
-## Tech-Stack - Swift
+## Tech-Stack 
+Written using Xcode 12 and Swift 5
+SwiftUIKit / SwiftUI hybrid Front & Back
+Apple Maps
+GoogleMaps 4.1.0
+GooglePlaces 4.1.0
+![External API](https://github.com/BalestraPatrick/EmergencyAPI)
 
-### SOS App
-
-An app that recognises the users location (worldwide) and tells them the Emergency Services number for their location.  
-
-An app that reminds you to keep healthy and stay on top of your health goals.
-
+### User Stories:
 ```
-What can this app do?
-Connects to API to get local emergency service numbers
-Locates the users location
-Loads a map, automatically telling you where the nearest medical services are and then offers directions.
-Translates to local language or language of choice
-User creates profile and then Twilio sends help txt to your emergency contact
-Offers local language phrases allowing the user to ask for help to passers by in the native tongue
+As a User, 
+So I can provide my location to the emergency services
+I want the app to pinpoint my location and display the address
+
+As a User, 
+So I know what number to call for help
+I want the app to display the emergency numbers for my current location
+
+As a User, 
+So I am able to find help for myself
+I want to know the directions to the closest police station, pharmacy and hospital
 ```
 
 ### MVP
-Displays emergency service numbers for users location (via GPS)
-
-Tech Stack / Architecture
-SwiftUIKit / SwiftUI hybrid Front & Back
-Apple Maps
-External API
+App displays emergency service numbers for the users current location (via GPS)
+(User Story 1 & 2)
 
 ### Helpful Resources:
 
-### User Stories:
-As a User, so that I don’t die,
-I want to hit a big red button that says HELP
+https://developer.apple.com/sf-symbols/
+https://mobileinvader.com/corelocation-in-swiftui-mvvm-unit-tests/
+https://stackoverflow.com/questions/8534496/get-device-location-only-country-in-ios
+https://stackoverflow.com/questions/8534496/get-device-location-only-country-in-ios
+https://medium.com/macoclock/how-to-write-unit-tests-in-swift-using-xcode-f59196d0ebc3
+https://www.raywenderlich.com/960290-ios-unit-testing-and-ui-testing-tutorial
+https://medium.com/@max.codes/use-swiftui-in-uikit-view-controllers-with-uihostingcontroller-8fe68dfc523bs
 
-
-### Additional Functions:
-
+### Planning:
+#### Storyboards:
 ![Launch](https://user-images.githubusercontent.com/71830424/105181474-c01c5f80-5b23-11eb-89b8-09ae50f3bef6.png).
 
 ![Location](https://user-images.githubusercontent.com/71830424/105181740-16899e00-5b24-11eb-938e-09bac2e1946b.png).
+
+#### Possible Additional Features:
+- Translates to local language or language of choice
+- User creates profile and then Twilio sends help txt to your emergency contact
+- Offers local language phrases allowing the user to ask for help to passers by in the native tongue
+
