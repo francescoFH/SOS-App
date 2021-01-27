@@ -56,6 +56,9 @@ struct HomeAPIContentView: View {
                 }
             }
         }
+        Image("handshake copy")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
     }
 
 
