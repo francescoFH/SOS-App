@@ -1,6 +1,4 @@
-# SOS-App
-
-## About 
+# SOS-App 
 SOS-App is an emergency app which identifies the user-location and generates the corresponding emergency numbers for that area (Ambulance, Fire, Police). It will also generate a map giving directions to the closest hospitals, police stations and pharmacies. 
 
 
